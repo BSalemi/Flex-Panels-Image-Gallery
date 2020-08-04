@@ -26,6 +26,7 @@
             .panels {
                 min-height: 100vh;
                 overflow: hidden;
+                display:flex
             }
 
             .panel {
@@ -37,12 +38,13 @@
                 /* Safari transitionend event.propertyName === flex */
                 /* Chrome + FF transitionend event.propertyName === flex-grow */
                 transition:
-                    font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11);
-                flex: 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11);
-                background: 0.2s;
+                    font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+                    flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+                    background 0.2s;
                 font-size: 20px;
                 background-size: cover;
                 background-position: center;
+                flex-grow:1
             }
 
             .panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
@@ -54,27 +56,39 @@
 
 
         <div class="panels">
-            
-            <div class="panel">
 
+            <div class="panel panel1">
+                <p>Hey</p>
+                <p>Let's</p>
+                <p>Dance</p>
             </div>
 
-            <div class="panel">
-
+            <div class="panel panel2">
+                <p>Give</p>
+                <p>Take</p>
+                <p>Receive</p>
             </div>
 
-            <div class="panel">
-
+            <div class="panel panel3">
+                <p>Experience</p>
+                <p>It</p>
+                <p>Today</p>
             </div>
 
-            <div class="panel">
-
+            <div class="panel panel4">
+                <p>Give</p>
+                <p>All</p>
+                <p>You can</p>
             </div>
 
-            <div class="panel">
-
+            <div class="panel panel5">
+                <p>Life</p>
+                <p>In</p>
+      <         <p>Motion</p>
             </div>
 
         </div>
     </body>
+    <script>
+    </script>
 </html>
